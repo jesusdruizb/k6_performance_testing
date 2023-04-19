@@ -1,0 +1,42 @@
+{
+  "name": "k6 performance KT",
+  "version": "1.0.0",
+  "description": "k6 performance KT",
+  "main": "scripts/vus-test.js",
+  "type": "commonjs",
+  "scripts": {
+    "lint": "eslint ./scripts/ --ext .js",
+    "lint:fix": "eslint ./scripts/ --ext .js --fix",
+    "cleanReports": "find test-report/ -type f -delete ",
+    "test:vus-test": "k6 run scripts/vus-test.js -o json=./test-report/json/vus-test.json -o csv=./test-report/csv/vus-test.csv",
+    "test:stages-test": "k6 run scripts/stages-test.js -o json=./test-report/json/stages-test.json -o csv=./test-report/csv/stages-test.csv",
+    "test:scenarios-test": "k6 run scripts/scenarios-test.js -o json=./test-report/json/scenarios-test.json -o csv=./test-report/csv/scenarios-test.csv",
+    "test:groups-test": "k6 run scripts/groups-test.js -o json=./test-report/json/groups-test.json -o csv=./test-report/csv/groups-test.csv"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jesusdruizb/k6_performance_testing.git"
+  },
+  "keywords": [
+    "performance",
+    "automation"
+  ],
+  "author": "Jesus Ruiz Barreto",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "Dependencies": {
+    "k6": "^0.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.13.0",
+    "axios": "^1.3.2",
+    "eslint": "^8.33.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.3"
+  }
+}
