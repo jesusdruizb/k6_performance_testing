@@ -10,7 +10,7 @@ npm install
 ```
 - test functionality with the following command:
 ```
-npm run test:sample-test
+npm run test:vus-test
 ```
 
 
