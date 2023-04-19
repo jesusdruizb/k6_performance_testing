@@ -1,0 +1,9 @@
+.idea/
+node_modules/
+
+/test-report/*.*
+/test-report/html/*.*
+/test-report/csv/*.*
+/test-report/json/*.*
+
+secrets.json
